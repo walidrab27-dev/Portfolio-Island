@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://walidrab27-dev.github.io/Portfolio-Island",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
@@ -29,7 +29,6 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
-    "homepage": "https://github.com/walidrab27-dev/Portfolio-Island",
     "vite": "^8.0.12"
   }
 }
