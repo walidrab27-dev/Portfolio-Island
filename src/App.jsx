@@ -97,7 +97,7 @@ const PlayerAirplane = ({ activeProject }) => {
   const keys = useKeyboard();
   const [isCrashed, setIsCrashed] = useState(false);
 
-  const { scene } = useGLTF('/airplane.glb');
+  const { scene } = useGLTF('./airplane.glb');
 
   useFrame((state) => {
     if (!airplaneRef.current || activeProject) return;
@@ -296,7 +296,7 @@ const PlayerAirplane = ({ activeProject }) => {
 };
 // 4. Island Component with Floating Animation
 const IslandModel = ({ setActiveProject, activeProject }) => {
-  const { scene } = useGLTF('/island.glb'); 
+  const { scene } = useGLTF('./island.glb'); 
   const islandRef = useRef();
 
   useFrame((state) => {
